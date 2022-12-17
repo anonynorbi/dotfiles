@@ -1,0 +1,6 @@
+bumblebee-status
+cmatrix-git
+i3lock-color
+prismlauncher-bin
+minecraft-launcher
+goverlay-bin
