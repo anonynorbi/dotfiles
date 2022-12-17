@@ -292,14 +292,18 @@ bar {
 	#status_command i3status -c $HOME/.config/i3status/i3status.conf
         #status_command i3blocks -c $HOME/.config/i3blocks/i3blocks.conf
 	status_command /usr/bin/bumblebee-status \
-		-m cpu memory nic battery brightness \
-		pasink pasource time \
-		-p time.format="%H:%M" nic.states="^down" \
-		-t iceberg-rainbow
+		-m arch-update cpu memory nic bluetooth battery brightness \
+		pasink pasource time date system \
+		-p time.format="%H:%M:%S" nic.states="^down" \
+		brightness.interval=1s bluetooth.right-click="rfkill block bluetooth" \
+		date.format="%a, %d %b" system.logout="i3-msg exit" \
+		system.switch_user="" system.lock="$HOME/.config/scripts/lock" \
+		system.suspend="systemctl suspend" system.hibernate="systemctl hibernate" \
+		-t powerline
 	i3bar_command i3bar --transparency
 	position top
 	tray_output none
-	font pango:monospace 11
+	font pango:monospace 10
 	colors{
 		background $barcolor
 		separator #282828
@@ -317,6 +321,7 @@ default_floating_border pixel 2
 
 # Autostart Applications
 # exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+# exec_always --no-startup-id $HOME/.config/scripts/fix_touchpad_tap.sh
 exec_always setxkbmap us
 exec --no-startup-id nitrogen --restore
 exec picom --config $HOME/.config/picom.conf
@@ -329,7 +334,7 @@ exec --no-startup-id redshift
 #############################
 
 # Set inner/outer gaps
-gaps inner 15
+gaps inner 10
 gaps outer 5
 
 # gaps
