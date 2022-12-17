@@ -6,7 +6,7 @@ sudo pacman -S --needed - < pkglist.txt
 # Make yay (pacman wrapper and AUR helper)
 git clone https://aur.archlinux.org/yay.git
 cd yay
-make -csi
+makepkg -csi
 cd ..
 
 # Install packages from AUR
