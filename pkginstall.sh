@@ -7,6 +7,7 @@ sudo pacman -S --needed - < pkglist.txt
 git clone https://aur.archlinux.org/yay.git
 cd yay
 make -csi
+cd ..
 
 # Install packages from AUR
 yay -S --needed - < foreignpkglist.txt
