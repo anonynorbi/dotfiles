@@ -4,3 +4,9 @@ i3lock-color
 prismlauncher-bin
 minecraft-launcher
 goverlay-bin
+authy
+protonvpn
+yaru-icon-theme
+yaru-sound-theme
+yaru-gtk-theme
+gdm-settings

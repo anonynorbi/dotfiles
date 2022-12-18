@@ -7,6 +7,7 @@ terminator
 picom
 archlinux-wallpaper
 
+tk
 pacman-contrib
 git
 man
@@ -54,8 +55,15 @@ discord
 steam
 lutris
 gamemode
+jre8-openjdk
+jre17-openjdk
 virtualbox
+bitwarden
 cups
 hplip
 materia-gtk-theme
 papirus-icon-theme
+gnome-software-packagekit-plugin
+thunderbird
+libreoffice-fresh
+obs-studio
