@@ -10,3 +10,7 @@ yaru-icon-theme
 yaru-sound-theme
 yaru-gtk-theme
 gdm-settings
+protonup-qt-bin
+shell-color-scripts
+vkbasalt
+envycontrol

@@ -7,6 +7,8 @@ terminator
 picom
 archlinux-wallpaper
 
+cmake
+neofetch
 tk
 pacman-contrib
 git
@@ -58,6 +60,15 @@ gamemode
 jre8-openjdk
 jre17-openjdk
 virtualbox
+virtualbox-guest-iso
+virtualbox-guest-utils
+fuse2
+gnome-boxes
+virt-manager
+qemu-desktop
+dnsmasq
+iptables-nft
+dmidecode
 bitwarden
 cups
 hplip
@@ -67,3 +78,4 @@ gnome-software-packagekit-plugin
 thunderbird
 libreoffice-fresh
 obs-studio
+code

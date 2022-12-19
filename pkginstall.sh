@@ -1,5 +1,7 @@
 #!/bin/bash
 
+username="anonynorbi"
+
 # Install packages from official repos
 sudo pacman -S --needed - < pkglist.txt
 
@@ -11,3 +13,9 @@ cd ..
 
 # Install packages from AUR
 yay -S --needed - < foreignpkglist.txt
+
+# Enable services
+systemctl enable bluetooth ufw libvirtd
+
+# Add user to groups
+usermod -a -G libvirt $username
