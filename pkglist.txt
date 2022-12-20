@@ -72,6 +72,7 @@ dmidecode
 bitwarden
 cups
 hplip
+python-pyqt5
 materia-gtk-theme
 papirus-icon-theme
 gnome-software-packagekit-plugin
