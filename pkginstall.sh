@@ -15,7 +15,7 @@ cd ..
 yay -S --needed - < foreignpkglist.txt
 
 # Enable services
-systemctl enable bluetooth ufw libvirtd
+systemctl enable bluetooth ufw libvirtd cups
 
 # Add user to groups
 usermod -a -G libvirt $username
