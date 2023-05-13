@@ -289,17 +289,8 @@ client.urgent		$ubgcolor	$ubgcolor		$textcolor	$ubgcolor
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-	#status_command i3status -c $HOME/.config/i3/i3status.conf
+	status_command i3status -c $HOME/.config/i3/i3status.conf
         #status_command i3blocks -c $HOME/.config/i3/i3blocks.conf
-	status_command /usr/bin/bumblebee-status \
-		-m arch-update cpu memory nic bluetooth battery brightness \
-		pasink pasource time date system \
-		-p time.format="%H:%M:%S" nic.states="^down" \
-		brightness.interval=1s bluetooth.right-click="rfkill block bluetooth" \
-		date.format="%a, %d %b" system.logout="i3-msg exit" \
-		system.switch_user="" system.lock="$HOME/.config/scripts/lock" \
-		system.suspend="systemctl suspend" system.hibernate="systemctl hibernate" \
-		-t powerline
 	i3bar_command i3bar --transparency
 	position top
 	tray_output none
